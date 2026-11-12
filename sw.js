@@ -1,6 +1,6 @@
 // Offline cache: network first, falling back to the last cached copy.
 // Bump VERSION to drop old caches after a release.
-const VERSION = 'rebarscan-20261112133258'
+const VERSION = 'rebarscan-20261112165156'
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(VERSION).then((c) => c.addAll(['./', './index.html', './manifest.webmanifest'])))
